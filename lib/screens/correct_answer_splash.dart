@@ -1,40 +1,40 @@
-import '../pages/login_page.dart';
+import 'package:convite/questions/question_two.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class Splash extends StatefulWidget {
-  const Splash({Key? key}) : super(key: key);
+class CorrectAnswerSplash extends StatefulWidget {
+  const CorrectAnswerSplash({Key? key}) : super(key: key);
 
   @override
-  _SplashState createState() => _SplashState();
+  _CorrectAnswerSplashState createState() => _CorrectAnswerSplashState();
 }
 
-class _SplashState extends State<Splash> {
+class _CorrectAnswerSplashState extends State<CorrectAnswerSplash> {
   @override
   void initState() {
     super.initState();
     SystemChrome.setEnabledSystemUIOverlays(SystemUiOverlay.values);
     Future.delayed(Duration(seconds: 4)).then((_) {
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => LoginPage()));
+          context, MaterialPageRoute(builder: (context) => QuestionTwo()));
     });
   }
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.black,
+      color: Color(0xFFCADDFF),
       child: Center(
         child: Column(
           children: [
             Container(
               width: 300,
               height: 300,
-              child: Image.asset("images/splash1.png"),
+              child: Image.asset("images/correct.png"),
             ),
             const SizedBox(height: 20),
             Text(
-              'Programming Quizz',
+              'Resposta correta!',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 45,
@@ -44,7 +44,7 @@ class _SplashState extends State<Splash> {
             ),
             const SizedBox(height: 20),
             Text(
-              '913',
+              'Continue assim :)',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 40,

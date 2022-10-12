@@ -1,15 +1,15 @@
-import 'package:convite/screens/convite_splash.dart';
+import 'home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class QuestionThree extends StatefulWidget {
-  const QuestionThree({Key? key}) : super(key: key);
+class Introduction extends StatefulWidget {
+  const Introduction({Key? key}) : super(key: key);
 
   @override
-  _QuestionThreeState createState() => _QuestionThreeState();
+  _IntroductionState createState() => _IntroductionState();
 }
 
-class _QuestionThreeState extends State<QuestionThree> {
+class _IntroductionState extends State<Introduction> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,8 +23,15 @@ class _QuestionThreeState extends State<QuestionThree> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
+                  Image.asset(
+                    "images/caminho.png",
+                    width: 300,
+                    height: 300,
+                    fit: BoxFit.fitHeight,
+                  ),
+                  const SizedBox(height: 16),
                   const Text(
-                    'PERGUNTA 3',
+                    'Se fôssemos fazer uma pergunta sobre algo importante, seria mais provável você responder sim ou não?',
                     textAlign: TextAlign.justify,
                     style: TextStyle(
                       fontSize: 30,
@@ -33,9 +40,26 @@ class _QuestionThreeState extends State<QuestionThree> {
                   ),
                   const SizedBox(height: 32),
                   ElevatedButton(
-                    onPressed: onPressed,
+                    onPressed: onPressedButton,
                     child: const Text(
-                      'Próxima',
+                      'SIM',
+                      style: TextStyle(
+                        fontSize: 25,
+                        color: Color(0xFF084870),
+                      ),
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      primary: const Color(0xFFA3E6FF),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(16),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 32),
+                  ElevatedButton(
+                    onPressed: onPressedButton,
+                    child: const Text(
+                      'NÃO',
                       style: TextStyle(
                         fontSize: 25,
                         color: Color(0xFF084870),
@@ -57,12 +81,12 @@ class _QuestionThreeState extends State<QuestionThree> {
     );
   }
 
-  void onPressed() {
+  void onPressedButton() {
     Navigator.push(
       context,
       MaterialPageRoute(
         builder: (context) {
-          return const ConviteSplash();
+          return const HomePage();
         },
       ),
     );

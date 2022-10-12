@@ -1,46 +1,46 @@
-import 'package:convite/questions/question_one.dart';
+import 'package:convite/questions/convite.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class ThirdSplash extends StatefulWidget {
-  const ThirdSplash({Key? key}) : super(key: key);
+class ConviteSplash extends StatefulWidget {
+  const ConviteSplash({Key? key}) : super(key: key);
 
   @override
-  _ThirdSplashState createState() => _ThirdSplashState();
+  _ConviteSplashState createState() => _ConviteSplashState();
 }
 
-class _ThirdSplashState extends State<ThirdSplash> {
+class _ConviteSplashState extends State<ConviteSplash> {
   @override
   void initState() {
     super.initState();
     SystemChrome.setEnabledSystemUIOverlays(SystemUiOverlay.values);
     Future.delayed(Duration(seconds: 4)).then((_) {
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => QuestionOne()));
+          context, MaterialPageRoute(builder: (context) => Convite()));
     });
   }
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.black,
+      color: Colors.blueAccent,
       child: Center(
         child: Column(
           children: [
-            Container(
-              width: 350,
-              height: 400,
-              child: Image.asset("images/splash3.png"),
-            ),
-            const SizedBox(height: 32),
             Text(
-              'VAMOS LÁ!',
+              'Você concluiu os requisitos para ser padrinho de formatura da turma 913.',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 50,
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
               ),
+            ),
+            const SizedBox(height: 20),
+            Container(
+              width: 300,
+              height: 300,
+              child: Image.asset("images/congrats.png"),
             ),
           ],
         ),
