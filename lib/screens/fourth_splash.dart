@@ -1,22 +1,22 @@
-import 'package:convite/questions/question_one.dart';
+import 'package:convite/questions/question_three.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class ThirdSplash extends StatefulWidget {
-  const ThirdSplash({Key? key}) : super(key: key);
+class FourthSplash extends StatefulWidget {
+  const FourthSplash({Key? key}) : super(key: key);
 
   @override
-  _ThirdSplashState createState() => _ThirdSplashState();
+  _FourthSplashState createState() => _FourthSplashState();
 }
 
-class _ThirdSplashState extends State<ThirdSplash> {
+class _FourthSplashState extends State<FourthSplash> {
   @override
   void initState() {
     super.initState();
     SystemChrome.setEnabledSystemUIOverlays(SystemUiOverlay.values);
     Future.delayed(Duration(seconds: 4)).then((_) {
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => QuestionOne()));
+          context, MaterialPageRoute(builder: (context) => QuestionThree()));
     });
   }
 
@@ -27,14 +27,8 @@ class _ThirdSplashState extends State<ThirdSplash> {
       child: Center(
         child: Column(
           children: [
-            Container(
-              width: 350,
-              height: 400,
-              child: Image.asset("images/splash3.png"),
-            ),
-            const SizedBox(height: 32),
             Text(
-              'VAMOS LÁ!',
+              'Splash 4',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 50,

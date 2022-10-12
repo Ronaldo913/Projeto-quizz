@@ -1,4 +1,4 @@
-import 'package:convite/home_page.dart';
+import '../pages/introduction.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -17,7 +17,7 @@ class _SecondSplashState extends State<SecondSplash> {
     Future.delayed(Duration(seconds: 3)).then((_) {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => HomePage()),
+        MaterialPageRoute(builder: (context) => Introduction()),
       );
     });
   }

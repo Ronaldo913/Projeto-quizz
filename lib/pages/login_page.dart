@@ -122,31 +122,4 @@ class _LoginPageState extends State<LoginPage> {
       }
     }
   }
-
-  /*onPressedLogin() async {
-    if (_formKey.currentState!.validate()) {
-      String user = userController.text;
-
-      bool resultado = await UsuarioDao().autenticar(user: user);
-
-      if (resultado) {
-        // Push para pag de login
-        Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(
-            builder: (context) {
-              return const SecondSplash();
-            },
-          ),
-        );
-      } else {
-        // Mostrar a mensagem de erro
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text("Usuario incorreto!"),
-          ),
-        );
-      }
-    }
-  }*/
 }
