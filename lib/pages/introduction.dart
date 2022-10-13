@@ -41,11 +41,14 @@ class _IntroductionState extends State<Introduction> {
                   const SizedBox(height: 32),
                   ElevatedButton(
                     onPressed: onPressedButton,
-                    child: const Text(
-                      'SIM',
-                      style: TextStyle(
-                        fontSize: 25,
-                        color: Color(0xFF084870),
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 130.0),
+                      child: const Text(
+                        'SIM',
+                        style: TextStyle(
+                          fontSize: 25,
+                          color: Color(0xFF084870),
+                        ),
                       ),
                     ),
                     style: ElevatedButton.styleFrom(
@@ -58,11 +61,14 @@ class _IntroductionState extends State<Introduction> {
                   const SizedBox(height: 32),
                   ElevatedButton(
                     onPressed: onPressedButton,
-                    child: const Text(
-                      'NÃO',
-                      style: TextStyle(
-                        fontSize: 25,
-                        color: Color(0xFF084870),
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 130.0),
+                      child: const Text(
+                        'NÃO',
+                        style: TextStyle(
+                          fontSize: 25,
+                          color: Color(0xFF084870),
+                        ),
                       ),
                     ),
                     style: ElevatedButton.styleFrom(

@@ -1,4 +1,4 @@
-import 'package:convite/screens/convite_splash.dart';
+import '../screens/convite_splash.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 

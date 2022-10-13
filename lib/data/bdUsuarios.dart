@@ -14,6 +14,15 @@ class BD {
     Usuario(
       usuario: 'Tarsis Marinho',
     ),
+    Usuario(
+        usuario: 'TARSIS MARINHO',
+    ),
+    Usuario(
+      usuario: 'Tarsis Marinho de Souza',
+    ),
+    Usuario(
+        usuario: 'TARSIS MARINHO DE SOUZA',
+    ),
   ];
 
   static Future<List<Usuario>> getUsuario() async {

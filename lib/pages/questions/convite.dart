@@ -1,15 +1,15 @@
-import 'package:convite/screens/fourth_splash.dart';
+import 'package:convite/pages/congratulations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class QuestionTwo extends StatefulWidget {
-  const QuestionTwo({Key? key}) : super(key: key);
+class Convite extends StatefulWidget {
+  const Convite({Key? key}) : super(key: key);
 
   @override
-  _QuestionTwoState createState() => _QuestionTwoState();
+  _ConviteState createState() => _ConviteState();
 }
 
-class _QuestionTwoState extends State<QuestionTwo> {
+class _ConviteState extends State<Convite> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,7 +24,7 @@ class _QuestionTwoState extends State<QuestionTwo> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   const Text(
-                    'PERGUNTA 2',
+                    'Você aceita?',
                     textAlign: TextAlign.justify,
                     style: TextStyle(
                       fontSize: 30,
@@ -35,7 +35,24 @@ class _QuestionTwoState extends State<QuestionTwo> {
                   ElevatedButton(
                     onPressed: onPressed,
                     child: const Text(
-                      'Próxima',
+                      'SIM',
+                      style: TextStyle(
+                        fontSize: 25,
+                        color: Color(0xFF084870),
+                      ),
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      primary: const Color(0xFFA3E6FF),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(16),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 32),
+                  ElevatedButton(
+                    onPressed: null,
+                    child: const Text(
+                      'NÃO',
                       style: TextStyle(
                         fontSize: 25,
                         color: Color(0xFF084870),
@@ -62,7 +79,7 @@ class _QuestionTwoState extends State<QuestionTwo> {
       context,
       MaterialPageRoute(
         builder: (context) {
-          return const FourthSplash();
+          return const Congratulations();
         },
       ),
     );

@@ -1,6 +1,7 @@
-import 'package:convite/screens/third_splash.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
+import 'screens/third_splash.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -41,11 +42,14 @@ class _HomePageState extends State<HomePage> {
                   const SizedBox(height: 32),
                   ElevatedButton(
                     onPressed: onPressedButton,
-                    child: const Text(
-                      'MAIS CURTO',
-                      style: TextStyle(
-                        fontSize: 25,
-                        color: Color(0xFF084870),
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 80.0),
+                      child: const Text(
+                        'MAIS CURTO',
+                        style: TextStyle(
+                          fontSize: 25,
+                          color: Color(0xFF084870),
+                        ),
                       ),
                     ),
                     style: ElevatedButton.styleFrom(
@@ -58,11 +62,14 @@ class _HomePageState extends State<HomePage> {
                   const SizedBox(height: 32),
                   ElevatedButton(
                     onPressed: onPressedButton,
-                    child: const Text(
-                      'MAIS LONGO',
-                      style: TextStyle(
-                        fontSize: 25,
-                        color: const Color(0xFF084870),
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 80.0),
+                      child: const Text(
+                        'MAIS LONGO',
+                        style: TextStyle(
+                          fontSize: 25,
+                          color: const Color(0xFF084870),
+                        ),
                       ),
                     ),
                     style: ElevatedButton.styleFrom(
@@ -75,11 +82,14 @@ class _HomePageState extends State<HomePage> {
                   const SizedBox(height: 32),
                   ElevatedButton(
                     onPressed: onPressedButton,
-                    child: const Text(
-                      'MAIS FÁCIL',
-                      style: TextStyle(
-                        fontSize: 25,
-                        color: Color(0xFF084870),
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 90.0),
+                      child: const Text(
+                        'MAIS FÁCIL',
+                        style: TextStyle(
+                          fontSize: 25,
+                          color: Color(0xFF084870),
+                        ),
                       ),
                     ),
                     style: ElevatedButton.styleFrom(
@@ -92,11 +102,14 @@ class _HomePageState extends State<HomePage> {
                   const SizedBox(height: 32),
                   ElevatedButton(
                     onPressed: onPressedButton,
-                    child: const Text(
-                      'MAIS DIFÍCIL',
-                      style: TextStyle(
-                        fontSize: 25,
-                        color: Color(0xFF084870),
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 80.0),
+                      child: const Text(
+                        'MAIS DIFÍCIL',
+                        style: TextStyle(
+                          fontSize: 25,
+                          color: Color(0xFF084870),
+                        ),
                       ),
                     ),
                     style: ElevatedButton.styleFrom(

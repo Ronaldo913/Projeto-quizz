@@ -14,7 +14,7 @@ class _QuestionOneState extends State<QuestionOne> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF033E8C),
+      backgroundColor: const Color(0xFFA3E6FF),
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: ListView(
@@ -36,72 +36,84 @@ class _QuestionOneState extends State<QuestionOne> {
                     textAlign: TextAlign.justify,
                     style: TextStyle(
                       fontSize: 30,
-                      color: Colors.white,
+                      color: Color(0xFF033E8C),
                     ),
                   ),
                   const SizedBox(height: 32),
                   ElevatedButton(
                     onPressed: wrongPressed,
-                    child: const Text(
-                      '15',
-                      style: TextStyle(
-                        fontSize: 25,
-                        color: Color(0xFF084870),
+                    child: const Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 140.0),
+                      child: Text(
+                        '15',
+                        style: TextStyle(
+                          fontSize: 25,
+                          color: Color(0xFFA3E6FF),
+                        ),
                       ),
                     ),
                     style: ElevatedButton.styleFrom(
-                      primary: const Color(0xFFA3E6FF),
+                      primary: const Color(0xFF033E8C),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(16),
                       ),
                     ),
                   ),
-                  const SizedBox(height: 32),
+                  const SizedBox(height: 16),
                   ElevatedButton(
                     onPressed: wrongPressed,
-                    child: const Text(
-                      '22',
-                      style: TextStyle(
-                        fontSize: 25,
-                        color: Color(0xFF084870),
+                    child: const Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 140.0),
+                      child: Text(
+                        '22',
+                        style: TextStyle(
+                          fontSize: 25,
+                          color: Color(0xFFA3E6FF),
+                        ),
                       ),
                     ),
                     style: ElevatedButton.styleFrom(
-                      primary: const Color(0xFFA3E6FF),
+                      primary: const Color(0xFF033E8C),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(16),
                       ),
                     ),
                   ),
-                  const SizedBox(height: 32),
+                  const SizedBox(height: 16),
                   ElevatedButton(
                     onPressed: correctPressed,
-                    child: const Text(
-                      '35',
-                      style: TextStyle(
-                        fontSize: 25,
-                        color: Color(0xFF084870),
+                    child: const Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 140.0),
+                      child: Text(
+                        '35',
+                        style: TextStyle(
+                          fontSize: 25,
+                          color: Color(0xFFA3E6FF),
+                        ),
                       ),
                     ),
                     style: ElevatedButton.styleFrom(
-                      primary: const Color(0xFFA3E6FF),
+                      primary: const Color(0xFF033E8C),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(16),
                       ),
                     ),
                   ),
-                  const SizedBox(height: 32),
+                  const SizedBox(height: 16),
                   ElevatedButton(
                     onPressed: wrongPressed,
-                    child: const Text(
-                      '80',
-                      style: TextStyle(
-                        fontSize: 25,
-                        color: Color(0xFF084870),
+                    child: const Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 140.0),
+                      child: Text(
+                        '80',
+                        style: TextStyle(
+                          fontSize: 25,
+                          color: Color(0xFFA3E6FF),
+                        ),
                       ),
                     ),
                     style: ElevatedButton.styleFrom(
-                      primary: const Color(0xFFA3E6FF),
+                      primary: const Color(0xFF033E8C),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(16),
                       ),
