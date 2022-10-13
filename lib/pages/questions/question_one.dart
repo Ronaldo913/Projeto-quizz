@@ -14,7 +14,7 @@ class _QuestionOneState extends State<QuestionOne> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFA3E6FF),
+      backgroundColor: const Color(0xFF023059),
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: ListView(
@@ -26,8 +26,8 @@ class _QuestionOneState extends State<QuestionOne> {
                 children: [
                   Image.asset(
                     "images/devs.png",
-                    width: 300,
-                    height: 300,
+                    width: 250,
+                    height: 250,
                     fit: BoxFit.fitHeight,
                   ),
                   const SizedBox(height: 16),
@@ -35,8 +35,8 @@ class _QuestionOneState extends State<QuestionOne> {
                     'Analisando a imagem acima, pode-se dizer que o time de desenvolvedores retratado é composto por:',
                     textAlign: TextAlign.justify,
                     style: TextStyle(
-                      fontSize: 30,
-                      color: Color(0xFF033E8C),
+                      fontSize: 25,
+                      color: Colors.white,
                     ),
                   ),
                   const SizedBox(height: 32),
@@ -48,12 +48,12 @@ class _QuestionOneState extends State<QuestionOne> {
                         '15',
                         style: TextStyle(
                           fontSize: 25,
-                          color: Color(0xFFA3E6FF),
+                          color: Color(0xFF023059),
                         ),
                       ),
                     ),
                     style: ElevatedButton.styleFrom(
-                      primary: const Color(0xFF033E8C),
+                      primary: Colors.white,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(16),
                       ),
@@ -68,12 +68,12 @@ class _QuestionOneState extends State<QuestionOne> {
                         '22',
                         style: TextStyle(
                           fontSize: 25,
-                          color: Color(0xFFA3E6FF),
+                          color: Color(0xFF023059),
                         ),
                       ),
                     ),
                     style: ElevatedButton.styleFrom(
-                      primary: const Color(0xFF033E8C),
+                      primary: Colors.white,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(16),
                       ),
@@ -88,12 +88,12 @@ class _QuestionOneState extends State<QuestionOne> {
                         '35',
                         style: TextStyle(
                           fontSize: 25,
-                          color: Color(0xFFA3E6FF),
+                          color: Color(0xFF023059),
                         ),
                       ),
                     ),
                     style: ElevatedButton.styleFrom(
-                      primary: const Color(0xFF033E8C),
+                      primary: Colors.white,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(16),
                       ),
@@ -108,12 +108,12 @@ class _QuestionOneState extends State<QuestionOne> {
                         '80',
                         style: TextStyle(
                           fontSize: 25,
-                          color: Color(0xFFA3E6FF),
+                          color: Color(0xFF023059),
                         ),
                       ),
                     ),
                     style: ElevatedButton.styleFrom(
-                      primary: const Color(0xFF033E8C),
+                      primary: Colors.white,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(16),
                       ),

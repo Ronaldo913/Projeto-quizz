@@ -13,7 +13,7 @@ class _ConviteState extends State<Convite> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF033E8C),
+      backgroundColor: Color(0xFFfa8128),
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: ListView(
@@ -23,12 +23,20 @@ class _ConviteState extends State<Convite> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
+                  Container(
+                    width: 350,
+                    height: 400,
+                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(100)),
+                    child: Image.network('https://media.tenor.com/JaQeDPGZvHoAAAAM/cute-cat.gif'),
+                  ),
+                  SizedBox(height: 8),
                   const Text(
-                    'Você aceita?',
+                    'VOCÊ ACEITA?',
                     textAlign: TextAlign.justify,
                     style: TextStyle(
                       fontSize: 30,
                       color: Colors.white,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                   const SizedBox(height: 32),
@@ -38,11 +46,11 @@ class _ConviteState extends State<Convite> {
                       'SIM',
                       style: TextStyle(
                         fontSize: 25,
-                        color: Color(0xFF084870),
+                        color: Colors.white,
                       ),
                     ),
                     style: ElevatedButton.styleFrom(
-                      primary: const Color(0xFFA3E6FF),
+                      primary: const Color(0xFF893101),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(16),
                       ),
@@ -55,7 +63,7 @@ class _ConviteState extends State<Convite> {
                       'NÃO',
                       style: TextStyle(
                         fontSize: 25,
-                        color: Color(0xFF084870),
+                        color: Colors.white,
                       ),
                     ),
                     style: ElevatedButton.styleFrom(

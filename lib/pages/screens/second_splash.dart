@@ -1,7 +1,6 @@
+import 'package:convite/pages/questions/question_one.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
-import '../introduction.dart';
 
 class SecondSplash extends StatefulWidget {
   const SecondSplash({Key? key}) : super(key: key);
@@ -15,10 +14,10 @@ class _SecondSplashState extends State<SecondSplash> {
   void initState() {
     super.initState();
     SystemChrome.setEnabledSystemUIOverlays(SystemUiOverlay.values);
-    Future.delayed(Duration(seconds: 3)).then((_) {
+    Future.delayed(Duration(seconds: 10)).then((_) {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => Introduction()),
+        MaterialPageRoute(builder: (context) => QuestionOne()),
       );
     });
   }
@@ -29,33 +28,33 @@ class _SecondSplashState extends State<SecondSplash> {
       child: Scaffold(
         body: Container(
           padding: EdgeInsets.all(16),
-          color: const Color(0xFF033E8C),
+          color: Colors.white,
           child: Center(
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Container(
-                     width: 200,
-                     height: 200,
-                     child: Image.asset("images/splash2.png"),
+                     width: 500,
+                     child: Image.network("https://static.appgeek.com.br/imagens/dino-non-birthday-version-0.gif"),
                   ),
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 4),
                   const Text(
-                    'Olá, Tarsis Marinho!',
+                    'OLÁ, TARSIS MARINHO',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 40,
                       fontWeight: FontWeight.bold,
-                      color: Colors.white,
+                      color: const Color(0xFF023059),
                     ),
                   ),
                   const SizedBox(height: 20),
                   const Text(
-                    'Seja bem-vindo ao Programming Quiz da 913!',
+                    'SEJA BEM-VINDO AO PROGRAMMING QUIZZ',
                      textAlign: TextAlign.center,
                     style: TextStyle(
-                      fontSize: 40,
+                      fontSize: 30,
                       fontWeight: FontWeight.bold,
-                      color: Colors.white,
+                      color: const Color(0xFF023059)
                     ),
                   ),
                 ],

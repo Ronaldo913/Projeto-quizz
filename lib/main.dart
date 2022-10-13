@@ -3,6 +3,9 @@ import '../pages/screens/first_splash.dart';
 
 void main() {
   runApp(
-    const MaterialApp(home: Splash()),
+    const MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: Splash(),
+    ),
   );
 }
