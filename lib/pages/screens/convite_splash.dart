@@ -14,7 +14,7 @@ class _ConviteSplashState extends State<ConviteSplash> {
   void initState() {
     super.initState();
     SystemChrome.setEnabledSystemUIOverlays(SystemUiOverlay.values);
-    Future.delayed(Duration(seconds: 4)).then((_) {
+    Future.delayed(Duration(seconds: 6)).then((_) {
       Navigator.pushReplacement(
           context, MaterialPageRoute(builder: (context) => Convite()));
     });
@@ -26,16 +26,17 @@ class _ConviteSplashState extends State<ConviteSplash> {
       child: Scaffold(
         body: Container(
           padding: const EdgeInsets.all(16),
-          color: Colors.blueAccent,
+          color: Color(0xFF101084),
           child: Center(
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 const Text(
-                  'Você concluiu os requisitos para ser padrinho de formatura da turma 913.',
+                  'Você se adequa aos requisitos para ser padrinho de formatura da turma 913...',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 50,
-                    color: Color(0xFFA3E6FF),
+                    color: Colors.white,
                   ),
                 ),
                 const SizedBox(height: 20),
