@@ -25,14 +25,15 @@ class _IncorrectAnswerSplashState extends State<IncorrectAnswerSplash> {
     return SafeArea(
       child: Scaffold(
         body: Container(
-          color: Color(0xFFA3E6FF),
+          color: Colors.white,
           child: Center(
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Container(
                   width: 300,
                   height: 300,
-                  child: Image.asset("images/error.png"),
+                  child: Image.network("https://i.gifer.com/origin/91/91ecd2311e7def6121a9d55fcca1c29f.gif"),
                 ),
                 const SizedBox(height: 20),
                 Text(
